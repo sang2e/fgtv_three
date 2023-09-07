@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: rgb(214, 214, 214);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.loading {
+  width: 100%;
+  font-size: 80px;
+  font-weight: bold;
+}
+
+canvas {
+  width: 100vw;
+  height: 100vh;
+}
+
+div.label {
+  background-color: rgba(0, 0, 0, 0.596);
+  width: 80px;
+  color: #fff;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 24px;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+div.label:hover,
+div.label.active {
+  background-color: gold;
+  color: #000;
+  cursor: pointer;
+} 
+
+div.label2 {
+  width: 100px;
+}
+div.label3 {
+  width: 160px;
+}
+
+/* div.daeseongjeon {
+  position: absolute;
+  top: -18px;
+  left: -52px;
+} */
+
+/* div.gyoyuggwan,
+div.gyoyuggwan2 {
+  position: absolute;
+  top: -18px;
+  left: -52px;
+  width: 120px;
+} */
+
+/* div.seongyosenteo {
+  position: absolute;
+  top: -20px;
+  left: -114px;
+} */
+
+/* div.yeongsanbogjisenteo {
+  position: absolute;
+  top: -20px;
+  left: -114px;
+} */
+
+span.daeseongjeon {
+  position: absolute;
+  top: -72px;
+  left: -52px;
+  display: block;
+  width: 101px;
+  height: 92px;
+  background: url(./icon1.png) 0 0 no-repeat;
+}
+
+span.daeseongjeon:hover,
+span.daeseongjeon.active {
+  background: url(./icon1-1.png) 0 0 no-repeat;
+  cursor: pointer;
+}
+
+span.gyoyuggwan {  
+  position: absolute;
+  top: -33px;
+  left: -64px;
+  display: block;
+  width: 150px;
+  height: 92px;
+  background: url(./icon6.png) 0 0 no-repeat;
+}
+
+span.gyoyuggwan:hover,
+span.gyoyuggwan.active {
+  background: url(./icon6-1.png) 0 0 no-repeat;
+  cursor: pointer;
+}
+
+span.gyoyuggwan2 {  
+  position: absolute;
+  top: -44px;
+  left: -50px;
+  display: block;
+  width: 150px;
+  height: 150px;
+  background: url(./icon5.png) 0 0 no-repeat;
+}
+
+span.gyoyuggwan2:hover,
+span.gyoyuggwan2.active {
+  background: url(./icon5-1.png) 0 0 no-repeat;
+  cursor: pointer;
+}
+
+
+span.seongyosenteo {  
+  position: absolute;
+  top: -14px;
+  left: -78px;
+  display: block;
+  width: 188px;
+  height: 92px;
+  background: url(./icon2.png) 0 0 no-repeat;
+}
+
+span.seongyosenteo:hover,
+span.seongyosenteo.active {
+  background: url(./icon2-1.png) 0 0 no-repeat;
+  cursor: pointer;
+}
+
+span.visioncenter {  
+  position: absolute;
+  /* top: -62px; */
+  top: -32px;
+  left: -70px;
+  display: block;
+  width: 130px;
+  height: 258px;
+  background: url(./icon8.png) 0 0 no-repeat;
+}
+
+span.visioncenter:hover,
+span.visioncenter.active {
+  background: url(./icon8-1.png) 0 0 no-repeat;
+  cursor: pointer;
+}
+
+span.yeongsanbogjisenteo {  
+  position: absolute;
+  /* top: -30px; */
+  top: -5px;
+  left: -96px;
+  display: block;
+  width: 188px;
+  height: 194px;
+  background: url(./icon3.png) 0 0 no-repeat;
+}
+
+span.yeongsanbogjisenteo:hover,
+span.yeongsanbogjisenteo.active {
+  background: url(./icon3-1.png) 0 0 no-repeat;
+  cursor: pointer;
+}
+
+span { 
+  transform: scale(0.75);
+}
+
