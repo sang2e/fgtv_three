@@ -1,15 +1,16 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: rgb(214, 214, 214);
+  background: rgb(196, 196, 196);
+  /* background: #fff2a9; */
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -40,7 +41,7 @@ div.label.active {
   background-color: gold;
   color: #000;
   cursor: pointer;
-} 
+}
 
 div.label2 {
   width: 100px;
@@ -91,7 +92,7 @@ span.daeseongjeon.active {
   cursor: pointer;
 }
 
-span.gyoyuggwan {  
+span.gyoyuggwan {
   position: absolute;
   top: -33px;
   left: -64px;
@@ -107,7 +108,7 @@ span.gyoyuggwan.active {
   cursor: pointer;
 }
 
-span.gyoyuggwan2 {  
+span.gyoyuggwan2 {
   position: absolute;
   top: -44px;
   left: -50px;
@@ -123,8 +124,7 @@ span.gyoyuggwan2.active {
   cursor: pointer;
 }
 
-
-span.seongyosenteo {  
+span.seongyosenteo {
   position: absolute;
   top: -14px;
   left: -78px;
@@ -140,7 +140,7 @@ span.seongyosenteo.active {
   cursor: pointer;
 }
 
-span.visioncenter {  
+span.visioncenter {
   position: absolute;
   /* top: -62px; */
   top: -32px;
@@ -157,7 +157,7 @@ span.visioncenter.active {
   cursor: pointer;
 }
 
-span.yeongsanbogjisenteo {  
+span.yeongsanbogjisenteo {
   position: absolute;
   /* top: -30px; */
   top: -5px;
@@ -174,7 +174,6 @@ span.yeongsanbogjisenteo.active {
   cursor: pointer;
 }
 
-span { 
+span {
   transform: scale(0.75);
 }
-
