@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: rgb(196, 196, 196);
+  background: #fbfbfb;
   /* background: #fff2a9; */
 }
 
@@ -14,10 +14,30 @@ code {
     monospace;
 }
 
+#root + div {
+  display: none;
+}
+
 .loading {
-  width: 100%;
-  font-size: 80px;
+  width: 360px;
+  min-width: 360px;
+  font-size: 60px;
   font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+}
+
+@media screen and (max-width: 1634px) {
+  .loading {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .loading {
+    font-size: 20px;
+  }
 }
 
 canvas {

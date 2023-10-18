@@ -19,7 +19,7 @@ import {
 import { Stats, OrbitControls } from "@react-three/drei";
 import { Water } from "three-stdlib";
 
-import World20 from "./World20";
+import World25 from "./World25";
 
 extend({ Water });
 
@@ -54,7 +54,7 @@ function Loader() {
   return (
     <Html center>
       {" "}
-      <div className="loading">{progress}% </div>
+      <div className="loading">로딩중 {Math.floor(progress)}% </div>
     </Html>
   );
 }
@@ -69,8 +69,7 @@ export default function App() {
           <ambientLight intensity={0.1} />
           {/* <primitive object={new THREE.AxesHelper(10)} /> */}
           {/* <Ocean /> */}
-          <World20 position={[0, 0, 0.5]} />
-
+          <World25 position={[0, 0, 0.5]} />
           <Environment preset="forest" />
         </Suspense>
         {/* <Sky scale={160} sunPosition={[-500, 150, -1000]} turbidity={0.1} /> */}
@@ -79,7 +78,7 @@ export default function App() {
           maxPolarAngle={Math.PI / 3.5}
           enableZoom={false}
         />
-        <Stats />c
+        <Stats />
       </Canvas>
     </div>
   );
