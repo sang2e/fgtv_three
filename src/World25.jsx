@@ -6,7 +6,7 @@ Command: npx gltfjsx@6.2.13 .world25.glb
 import React, { useRef, useState } from "react";
 import { useGLTF, Html } from "@react-three/drei";
 
-import Pin_1 from "./Pin_1";
+import Pins from "./Pins";
 
 export default function World25(props) {
   const group = useRef();
@@ -390,7 +390,7 @@ export default function World25(props) {
             receiveShadow
           />
         </group>
-        <Pin_1 />
+        <Pins />
         <mesh
           geometry={nodes.cover_daeseongjeon.geometry}
           material={materials["Material #289"]}

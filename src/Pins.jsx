@@ -7,9 +7,11 @@ import React, { useRef, useEffect, useState } from "react";
 import { useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 
-function Pin() {
+let vrid;
+
+function Pin_1() {
   const pinRef = useRef();
-  const { nodes, materials } = useGLTF("pin_1.glb");
+  const { nodes, materials } = useGLTF("pin.glb");
 
   // 마우스 호버 커서 변경
   const [hovered, setHovered] = useState(false);
@@ -25,23 +27,27 @@ function Pin() {
   return (
     <mesh
       ref={pinRef}
-      name="pin"
+      name="pin_1"
       geometry={nodes.pin.geometry}
       material={materials["s-red"]}
       position={[-8.7, 1, 3.65]}
       scale={1}
+      userData={{ vrid: "DS-00-01" }}
       onPointerOver={(e) => (e.stopPropagation(), setHovered(true))}
       onPointerOut={(e) => (e.stopPropagation(), setHovered(false))}
       onClick={(e) => (
         e.stopPropagation(),
-        (window.parent.location.href =
-          "../tour.html?startscene=0&startlookat=0,0,120,0,0;")
+        // (window.parent.location.href =
+        //   "../tour.html?startscene=0&startlookat=0,0,120,0,0;"),
+        // vrid data 할당
+        (vrid = pinRef.current.userData.vrid),
+        console.log(vrid)
       )}
     />
   );
 }
 
-export default function Pin_1(props) {
+export default function Pins(props) {
   const group = useRef();
   // const { nodes, materials } = useGLTF("pin.glb");
 
@@ -55,7 +61,7 @@ export default function Pin_1(props) {
           position={[-0.009, 0.001, 0.004]}
           scale={0.001}
         /> */}
-        <Pin />
+        <Pin_1 />
       </group>
     </group>
   );
